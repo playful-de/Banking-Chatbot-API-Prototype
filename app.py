@@ -93,7 +93,6 @@ class Authenticate(Resource):
             }
             if result:
                 data = {'status': 'success', 'data': {'task': 'authenticate', 'user': user, 'message': 'User is authenticated'}}
-                print(data)
                 return Response(json.dumps(data), status=200, mimetype='application/json')
             else:
                 data = {'status': 'failure', 'data': {'task': 'authenticate', 'message': 'User is not authenticated'}}
