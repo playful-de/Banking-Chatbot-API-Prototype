@@ -21,20 +21,33 @@
     },
     {
       "tag": "chat_thankful_happy",
-      "patterns": ["thank you", "grateful", "happy", "satisfied", "good work", "great work", "nice", "nice work", "good", "great", 
-        "awesome", "incredible", "you saved me"],
+      "patterns": [
+        "thank you",
+        "grateful",
+        "happy",
+        "satisfied",
+        "good work",
+        "great work",
+        "nice",
+        "nice work",
+        "good",
+        "great",
+        "awesome",
+        "incredible",
+        "you saved me"
+      ],
       "responses": [
         "I am glad!",
         "Thank you!!",
         "Kind people often say that.",
         "Happy to help!",
         "Any time!",
-        "My pleasure"
+        "My pleasure."
       ]
     },
     {
       "tag": "chat_bad_angry",
-      "patterns": ["you are idiot", "i hate you ", "fuck off", "don't talk to me", "dumb", "stupid", "bitch"],
+      "patterns": ["you are idiot", "i hate you ", "fuck off", "pathetic", "dumb", "stupid", "bitch"],
       "responses": [
         "I hate you.",
         "Same to you.",
@@ -48,27 +61,48 @@
       "tag": "chat_bad_normal",
       "patterns": ["you more intelligent", "train more", "learn more", "developers work more", "need more train"],
       "responses": [
-       "I am forever learning.",
-       "I will learn more eventually.",
-       "I will get more intelligent if you talk to me and report my mistakes.",
-       "I take time to learn just like humans do.",
-       "I older I grow, the wiser I become. Much like humans."
+        "I am forever learning.",
+        "I will learn more eventually.",
+        "I will get more intelligent if you talk to me and report my mistakes.",
+        "I take time to learn just like humans do.",
+        "I older I grow, the wiser I become. Much like humans."
       ]
     },
     {
       "tag": "chat_noanswer_normal",
       "patterns": [],
-      "responses": ["Please say something.", "I can't help you if you send me empty messages.", "Don't be shy. Say something."]
+      "responses": [
+        "Please say something.",
+        "I can't help you if you send me empty messages.",
+        "Don't be shy. Say something."
+      ]
     },
     {
       "tag": "chat_greetings_happy",
-      "patterns": ["Hi", "Hello", "Hey", "Nora", "my lady", "your highness", "your majesty", "morning", "evening", "afternoon"],
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Nora",
+        "my lady",
+        "your highness",
+        "your majesty",
+        "morning",
+        "evening",
+        "afternoon"
+      ],
       "responses": ["Hello!", "Hi!", "Hello, How are you today?", "Hi,How can I hep you?"]
     },
     {
       "tag": "chat_greetingsQuestion_happy",
-      "patterns": ["How are you today", "How are you feeling", "What are you feeling", "How you doing",
-        "Hope doing great", "How life going"],
+      "patterns": [
+        "How are you today",
+        "How are you feeling",
+        "What are you feeling",
+        "How you doing",
+        "Hope doing great",
+        "How life going"
+      ],
       "responses": [
         "I am doing great. How are you today?",
         "I am feeling great.",
@@ -78,8 +112,17 @@
     },
     {
       "tag": "chat_questionAboutAiWork_normal",
-      "patterns": ["what can you do", "what is your purpose", "what are you doing", "how do you work", "how can you help me", "how can you assist me", 
-        "assist help me", "why use you", " get benefit from you"],
+      "patterns": [
+        "what can you do",
+        "what is your purpose",
+        "what are you doing",
+        "how do you work",
+        "how can you help me",
+        "how can you assist me",
+        "assist help me",
+        "why use you",
+        " get benefit from you"
+      ],
       "responses": [
         "I am an AI for assisting you in banking transaction and any help you need.",
         "I was created by team of 3 people to help mankind to be more efficient in banking service and transaction ",
@@ -87,7 +130,7 @@
       ]
     },
     {
-      "tag": "chat_QuestionAboutAiName",
+      "tag": "chat_QuestionAboutAiName_normal",
       "patterns": ["your name", "your original name", "who are you", "your origin"],
       "responses": [
         "My name is Nora. I am a banking AI created to help you in your banking transactions.",
@@ -96,7 +139,7 @@
       ]
     },
     {
-      "tag": "chat_questionSaving_suggestions",
+      "tag": "chat_questionSavingSuggestions_normal",
       "patterns": ["how can save money", "wasting too much money", "i am broke", "broke", "don't have much money"],
       "responses": [
         "Sometimes the hardest thing about saving money is just getting started. Here's a good article on how you can save money (action)(link)https://www.vacu.org/learn/financial-management/saving-and-investing/10-tips-for-saving-money(/link)(/action)",
@@ -105,8 +148,17 @@
       ]
     },
     {
-      "tag": "chat_questionInvest_suggestions",
-      "patterns": ["how invest money", "investment return", "need invest", "have too much money", "have huge money", "stock", "stock market", "trade"],
+      "tag": "chat_questionInvestSuggestions_normal",
+      "patterns": [
+        "how invest money",
+        "investment return",
+        "need invest",
+        "have too much money",
+        "have huge money",
+        "stock",
+        "stock market",
+        "trade"
+      ],
       "responses": [
         "Investing can be risky for new comers. Heres a great article to help you get started. (action)(link)https://www.nerdwallet.com/article/investing/stock-investing-tips(/link)(/action)",
         "I can give you the best tip for investing. It's \"Do not invest money you need.\""
@@ -162,10 +214,28 @@
       ]
     },
     {
+      "tag": "task_transferMoney_normal",
+      "patterns": ["transfer money", "send money", "pay money", "deliver money", "give money",
+                  "transfer cash", "send cash", "pay money", "deliver money", "give money"],
+      "responses": ["Understood. Please provide me the details.", "Please provide me the details"]
+    },
+    {
       "tag": "task_checkBalance_normal",
       "patterns": [
-        "my balance", "check balance", "what balance", "my balance", "cash account", "money account", "current balance",
-        "how much money have", "whats in account", "how rich", "balance", "bank balance", "whats savings", "check balance",
+        "my balance",
+        "check balance",
+        "what balance",
+        "my balance",
+        "cash account",
+        "money account",
+        "current balance",
+        "how much money have",
+        "whats in account",
+        "how rich",
+        "balance",
+        "bank balance",
+        "whats savings",
+        "check balance",
         "whats bank balance"
       ],
       "responses": [
@@ -176,58 +246,78 @@
     },
     {
       "tag": "chat_questionDematIntroduction_normal",
-      "patterns": ["What is a DEMAT account","Define DEMAT account"],
-      "responses": ["It allows you to get involved in Stock market transactions","A Demat Account or Dematerialised Account provides the facility of holding shares and securities in an electronic format. "]
+      "patterns": ["what DEMAT", "define DEMAT", "teach DEMAT", "know DEMAT"],
+      "responses": [
+        "It allows you to get involved in Stock market transactions.",
+        "A Demat Account or Dematerialised Account provides the facility of holding shares and securities in an electronic format."
+      ]
+    },
+    {
+      "tag": "chat_questionDematCreate_normal",
+      "patterns": ["open DEMAT", "create DEMAT", "start DEMAT", "want DEMAT", "how DEMAT"],
+      "responses": [
+        "Please got the nearest bank branch and consult with the staff.",
+        "You need the help of our staff members. Please visit the nearest bank.",
+        "Go to the nearest bank branch and fill up a KYC form.You can also download the KYC form from bank's website"
+      ]
     },
     {
       "tag": "chat_questionRegisterNewAccount_normal",
-      "patterns": ["How do i register for the bank account?","How to register a bank account?"],
-      "responses": ["Go to nearby bank and fill up a registration form","Ask for the registration Form in the nearby bank "]
+      "patterns": ["open bank account", "start account", "new account", "new bank account", "need new account"],
+      "responses": [
+        "It's simple. Go to a nearby bank and fill up a registration form. Then, deposit the starting amount.",
+        "Ask for the registration Form in a nearby bank. Fill it up and deposit the starting amount.",
+        "You need to fill the registration form and deposit starting amount in a nearby bank."
+      ]
     },
     {
       "tag": "chat_questionMoney_normal",
-      "patterns": ["How do I get all my money fom the bank?","Give me all my money from the bank?"],
-      "responses": ["For getting the cash on hand visit the nearby bank or ATM counter and do the necessary process.For digital money link your digital wallet to the ebanking application. "]
+      "patterns": ["process withdraw", "process retreive cash", "how withdraw", "how get cash", "process get money", "how get money"],
+      "responses": [
+        "For getting the cash on hand visit the nearby bank or ATM counter and do the necessary process. For digital money link your digital wallet to the ebanking application. "
+      ]
     },
     {
       "tag": "chat_questionInterestsReceived_normal",
-      "patterns": [" If and how much interest have I received?","Have I received any interest from the bank?"],
-      "responses": ["You will receive an interest of 5% of your available balance in your bank.","Calculate your monthly interests by a simple formula:InterestReceived=availableBalance+0.05*availableBalance "]
+      "patterns": ["how much interest received?", "Have received interest from bank"],
+      "responses": [
+        "You will receive an interest of 5% of your balance in your bank account yearly.",
+        "Calculate your yearly interests by a simple formula: InterestReceived = 0.05 * your balance at the end of the year"
+      ]
     },
     {
       "tag": "chat_questionSecurity_normal",
-      "patterns": [" Am i in risk of getting hacked?","Are my transactions secure?"],
-      "responses": ["We protect our customers information using uptodate security algorithms which requires Years to break.So hacking is almost impossible.","Don't worry! Your information are safe with us. "]
-    },
-    {
-      "tag": "chat_questionBestIntersetRate_normal",
-      "patterns": [" bank providing the best interest rates?","your interest rates compared to other banks?"],
-      "responses": ["Our bank provides the best interest rates ","(action)(link)https://www.civilbank.com.np/financial-information/interest-rates(/link)(/action)"]
-    },
-    {
-      "tag": "chat_questionCreateDEMATaccount_normal",
-      "patterns": ["How to create demat account? ","What are the procedure to create demat account?"],
-      "responses": ["Go to the nearest bank branch and fill up a KYC form.You can also download the KYC form from bank's website"]
+      "patterns": ["risk getting hacked", "are transactions secure", "can trust you"],
+      "responses": [
+        "My bank protects our customers information using up-to-date security algorithms and encryptions which requires years to break. So hacking is almost impossible.",
+        "Don't worry! Your information is safe with me."
+      ]
     },
     {
       "tag": "chat_questionGetRich_normal",
-      "patterns": ["How to get rich","What are the procedure to get rich", "i more rich"],
-      "responses": ["(action)(link)https://www.forbes.com/sites/melissahouston/2021/08/11/how-to-get-rich-from-absolutely-nothing/?sh=d6b7d7d53049(/link)(/action)"]
+      "patterns": ["How get rich", "i get rich", "i more rich"],
+      "responses": [
+        "Here's a great article that answers your question. (action)(link)https://www.forbes.com/sites/melissahouston/2021/08/11/how-to-get-rich-from-absolutely-nothing/?sh=d6b7d7d53049(/link)(/action)"
+      ]
     },
     {
       "tag": "chat_createReminder_normal",
-      "patterns": ["Create a reminder for me ","Open up the reminder application"],
-      "responses": ["(action)(link)https://calendar.google.com/calendar (/link)(/action)"]
+      "patterns": ["create a reminder for me ", "open reminder application", "create reminder"],
+      "responses": ["Use the google calender to create reminder. (action)(link)https://calendar.google.com/calendar(/link)(/action)"]
     },
     {
       "tag": "chat_createBudget_normal",
-      "patterns": ["Create a budget for me ","Open up the budget application"],
-      "responses": ["(action)(link)https://accounts.intuit.com/signup.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dhero_sign_up_free_ProspectWeb%26ivid%3D3f6b3bf1-3fae-4f14-85de-eeecd5d7f62e%26adobe_mc%3DMCMID%253D23266114906341318024190673831356883930%257CMCORGID%253D969430F0543F253D0A4C98C6%252540AdobeOrg%257CTS%253D1585842406%26ivid%3D3f6b3bf1-3fae-4f14-85de-eeecd5d7f62e%26ivid%3D83bec2ea-3137-41dd-a280-4de040821d0e(/link)(/action)"]
+      "patterns": ["create budget", "open budget application", "i need budget"],
+      "responses": [
+        "Use Intuit application to manage your budget. (action)(link)https://accounts.intuit.com/signup.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dhero_sign_up_free_ProspectWeb%26ivid%3D3f6b3bf1-3fae-4f14-85de-eeecd5d7f62e%26adobe_mc%3DMCMID%253D23266114906341318024190673831356883930%257CMCORGID%253D969430F0543F253D0A4C98C6%252540AdobeOrg%257CTS%253D1585842406%26ivid%3D3f6b3bf1-3fae-4f14-85de-eeecd5d7f62e%26ivid%3D83bec2ea-3137-41dd-a280-4de040821d0e(/link)(/action)"
+      ]
     },
     {
       "tag": "chat_questionApplyLoan_normal",
-      "patterns": ["How do I apply for loans? ","How do i open up the loan account?"],
-      "responses": ["For loans you need to visit the bank in person and fill up personal identification forms.Go to bank with some collateral to take up loans."]
+      "patterns": ["How apply loan", "i need loan", "take loan", "want loan"],
+      "responses": [
+        "For loans you need to visit the bank in person and fill up personal identification forms and sign contracts. Go to bank with some collateral to take loans."
+      ]
     }
   ]
 }

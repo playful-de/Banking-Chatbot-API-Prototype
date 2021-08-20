@@ -1,6 +1,6 @@
 from flask import Flask, request, json, Response
 from flask_restful import Api, Resource
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 import re
 import pymongo
 import datetime
@@ -93,6 +93,7 @@ class Authenticate(Resource):
             }
             if result:
                 data = {'status': 'success', 'data': {'task': 'authenticate', 'user': user, 'message': 'User is authenticated'}}
+                print(data)
                 return Response(json.dumps(data), status=200, mimetype='application/json')
             else:
                 data = {'status': 'failure', 'data': {'task': 'authenticate', 'message': 'User is not authenticated'}}
@@ -243,11 +244,11 @@ class SaveChatLogs(Resource):
     def post(self):
         try:
             content = request.json
-            db.users.insert(content)
+            db.chat_logs.insert(content)
             data = {'status': 'success', 'data': {'task': 'save_chat_logs', 'message': 'Chat log saved'}}
             return Response(json.dumps(data), status=200, mimetype='application/json')
         except:
-            data = {'status': 'failure', 'data': {'task': 'save_chat_logs', 'message': 'Error'}}
+            data = {'status': 'failure', 'data': {'task': 'save_chat_logs', 'message': 'Sorry an error occured'}}
             return Response(json.dumps(data), status=500, mimetype='application/json')
 
 
